@@ -1,0 +1,136 @@
+ /* phone align */
+@media (max-width:767px){
+    header{
+        padding: 20px;
+    }
+    .fa-classic, .fa-regular, .fa-solid, .far, .fas {
+        color: white;
+    }
+    header nav .fa-bars{
+        display: block;
+        transition: color ease-in-out 0.5s ;
+        cursor: pointer;
+    }
+    header nav .fa-bars:hover{
+        color: #F70142;
+    }
+    .navbar .menu{
+        display: block;
+          position: absolute;
+          left: 0;
+          right: 0;
+          background-color: black;
+          top:70px;
+          padding: 30px 0;
+        display: none;
+          
+      }
+      .navbar .menu.open{
+        display:block;
+    }
+    .image img{
+        height: 100vh;
+        object-fit: cover;
+    }
+    header  .logo img{
+        width:38px;
+      }
+      .image .image-info{
+       left: 20px;
+       top: 52%;
+      
+      }
+      .image .image-info h1{
+       font-size: 42px;
+       line-height: 44px;
+   
+      }
+      .image .image-info h1 span{
+       font-size: 27px;
+      }
+      .image-info p{
+       font-size: 18px;
+       line-height: 29px;
+       margin-bottom: 13px;
+      }
+      .image-info .cta-button {
+       font-size: 14px;
+       cursor: pointer;
+      }
+   
+      .image .swiper-pagination {
+       bottom: 17px;
+       padding-right: 7px;
+     }
+     .swiper-slide::after{
+       content: '';
+       position: absolute;
+       width: 100%;
+       height: 300px;
+       bottom: 0;
+       left: 0;
+       background: linear-gradient(to top,rgba(0,0,0,1)0%,rgba(0,0,0,0)100%);
+     }
+     .swiper-pagination-bullet {
+       width: 23px;
+        height: 23px;
+        background: transparent;
+        border: 1px solid #ffffffff;
+        opacity:  1;
+    }
+    .swiper-pagination-bullet-active{
+       border: 2px solid #F70142;
+       opacity: 1;
+   }
+}
+
+
+/* tablet frame */
+
+@media  (min-width:768px)and (max-width:991px){
+
+    nav{
+        display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+    header{
+        padding: 46px 78px;
+    }
+    nav .navbar
+    {
+        padding-left: 46px;
+    }
+    .image .image-info h1{
+        font-size: 82px;
+        line-height: 69px;
+    }
+       .image .image-info h1 span{
+        font-size: 27px;
+       }
+       .image .image-info {
+        max-width: 540px;
+        top: 53%;
+       }
+       .image .image-info p{
+        line-height: 39px;
+        margin-top: 31px;
+        margin-bottom: 30px;
+        font-size: 30px;
+       }
+       .image-info .cta-button{
+        padding: 19px 43px;
+        border-radius: 40px;
+        font-size: 25px;
+       }
+       .swiper-pagination-bullet {
+        width: 43px;
+        height: 43px;
+       }
+       .image .swiper-pagination{
+        padding-right: 10px;
+       }
+      
+
+}  
+ 
